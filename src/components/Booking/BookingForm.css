@@ -1,19 +1,20 @@
 /* BookingForm.css */
-
-.booking-form {
-  margin-top: 2rem;
+.booking{
+  background: yellow;
+  margin: 2rem 3rem;
 }
-
+.booking h2 {
+  margin:3rem 2rem;
+  font-size: px;
+}
 .booking-form form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
 }
-
 .booking-form label {
   font-weight: bold;
 }
-
 .booking-form input[type="date"],
 .booking-form input[type="number"],
 .booking-form select {
@@ -22,7 +23,10 @@
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
+.booking-form .submit-container {
+  float: right; 
+  background: purple;
+}
 .booking-form button {
   background-color: #007bff;
   color: #fff;
@@ -33,11 +37,9 @@
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
-
 .booking-form button:hover {
   background-color: #0056b3;
 }
-
 .booking-summary {
   margin-top: 2rem;
 }

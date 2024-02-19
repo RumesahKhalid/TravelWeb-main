@@ -25,7 +25,8 @@ const Navbar = () => {
             <span>Service &#9662;</span>
             <div class="dropdown-content">
               <a href="./service">Choose Tour</a>
-              <a href="./service2">Hotels</a>
+              <a href="./hotel">Hotels</a>
+              <a href="./booking">Booking</a>
               <a href="./service">Activities</a>
               <a href="./service3">Flight</a>
             </div>

@@ -1,8 +1,8 @@
 // BookingForm.js
-
 import React, { useState } from 'react';
+import './BookingForm.css';
 
-const BookingForm = ({ onBookNow }) => {
+const BookingPage = ({ onBookNow }) => {
   const [checkInDate, setCheckInDate] = useState('');
   const [checkOutDate, setCheckOutDate] = useState('');
   const [roomType, setRoomType] = useState('');
@@ -24,6 +24,8 @@ const BookingForm = ({ onBookNow }) => {
   };
 
   return (
+  <div className='booking'>
+    <h2>Booking Sunmary</h2>
     <div className="booking-form">
       <form onSubmit={handleSubmit}>
         <label htmlFor="checkInDate">Check-in Date:</label>
@@ -45,11 +47,13 @@ const BookingForm = ({ onBookNow }) => {
 
         <label htmlFor="numGuests">Number of Guests:</label>
         <input type="number" id="numGuests" value={numGuests} min="1" onChange={(e) => setNumGuests(e.target.value)} required />
-
-        <button type="submit" className="book-button">Add</button>
+        <div className="submit-container">
+          <button type="submit" className='submit-info'>Add</button>
+        </div>  
       </form>
     </div>
+  </div> 
   );
 };
 
-export default BookingForm;
+export default BookingPage;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/navbar';
 import Header from '../components/Header/header';
-import Flight from '../components/Flight/BookingForm';
+import Flight from '../components/Flight/flightForm';
 import Footer from '../components/Footer/footer';
 import FlightImg from '../assets/flight.jpg';
 
