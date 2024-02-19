@@ -1,59 +1,83 @@
-// BookingForm.js
 import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css';
 
-const BookingPage = ({ onBookNow }) => {
-  const [checkInDate, setCheckInDate] = useState('');
-  const [checkOutDate, setCheckOutDate] = useState('');
+const HotelBookingForm = () => {
+  const [checkInDate, setCheckInDate] = useState(null);
+  const [checkOutDate, setCheckOutDate] = useState(null);
   const [roomType, setRoomType] = useState('');
   const [numRooms, setNumRooms] = useState(1);
   const [numGuests, setNumGuests] = useState(1);
+  const [summary, setSummary] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [thankYouModal, setThankYouModal] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Prepare booking data
-    const bookingData = {
-      checkInDate,
-      checkOutDate,
-      roomType,
-      numRooms,
-      numGuests
-    };
-    // Pass booking data to parent component
-    onBookNow(bookingData);
+  const handleAddBooking = () => {
+    const bookingSummary = `Check-in Date: ${checkInDate}\nCheck-out Date: ${checkOutDate}\nRoom Type: ${roomType}\nNumber of Rooms: ${numRooms}\nNumber of Guests: ${numGuests}`;
+    setSummary(bookingSummary);
+    setShowModal(true);
+  };
+
+  const handleOk = () => {
+    setThankYouModal(true);
+    setShowModal(false);
+  };
+
+  const handleClear = () => {
+    setCheckInDate(null);
+    setCheckOutDate(null);
+    setRoomType('');
+    setNumRooms(1);
+    setNumGuests(1);
+    setSummary('');
+    setShowModal(false);
   };
 
   return (
-  <div className='booking'>
-    <h2>Booking Sunmary</h2>
-    <div className="booking-form">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="checkInDate">Check-in Date:</label>
-        <input type="date" id="checkInDate" value={checkInDate} onChange={(e) => setCheckInDate(e.target.value)} required />
+    <div className="booking-container">
+      <label>Check-in Date:</label>
+      <DatePicker selected={checkInDate} onChange={date => setCheckInDate(date)} />
 
-        <label htmlFor="checkOutDate">Check-out Date:</label>
-        <input type="date" id="checkOutDate" value={checkOutDate} onChange={(e) => setCheckOutDate(e.target.value)} required />
+      <label>Check-out Date:</label>
+      <DatePicker selected={checkOutDate} onChange={date => setCheckOutDate(date)} />
 
-        <label htmlFor="roomType">Room Type:</label>
-        <select id="roomType" value={roomType} onChange={(e) => setRoomType(e.target.value)} required>
-          <option value="">Select Room Type</option>
-          <option value="single">Single</option>
-          <option value="double">Double</option>
-          <option value="suite">Suite</option>
-        </select>
+      <label>Room Type:</label>
+      <select value={roomType} onChange={e => setRoomType(e.target.value)}>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+      </select>
 
-        <label htmlFor="numRooms">Number of Rooms:</label>
-        <input type="number" id="numRooms" value={numRooms} min="1" onChange={(e) => setNumRooms(e.target.value)} required />
+      <label>Number of Rooms:</label>
+      <input type="number" value={numRooms} onChange={e => setNumRooms(e.target.value)} />
 
-        <label htmlFor="numGuests">Number of Guests:</label>
-        <input type="number" id="numGuests" value={numGuests} min="1" onChange={(e) => setNumGuests(e.target.value)} required />
-        <div className="submit-container">
-          <button type="submit" className='submit-info'>Add</button>
-        </div>  
-      </form>
+      <label>Number of Guests:</label>
+      <input type="number" value={numGuests} onChange={e => setNumGuests(e.target.value)} />
+
+      <button onClick={handleAddBooking}>Add Booking</button>
+
+      {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <h2>Booking Summary:</h2>
+            <p>{summary}</p>
+            <button onClick={handleOk}>Ok</button>
+            <button onClick={handleClear}>Clear</button>
+          </div>
+        </div>
+      )}
+
+      {thankYouModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <h2>Thank You for Booking!</h2>
+            <button onClick={() => setThankYouModal(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
-  </div> 
   );
 };
 
-export default BookingPage;
+export default HotelBookingForm;
