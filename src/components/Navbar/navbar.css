@@ -30,14 +30,14 @@
 }
 .nav-links{
     text-decoration: none;
-    color: blue;
+    color:#18858d;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0.7rem 1rem;
     white-space: nowrap;
 }
 .nav-links:hover{
-    background: rgb(46, 148, 212);
+    background: #75c9cf;
     color:white;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
@@ -46,14 +46,14 @@
 .dropdown {
   position: relative;
   text-decoration: none;
-  color: blue;
+  color: #18858d;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0.7rem 1rem;
   white-space: nowrap;
 }
 .dropdown:hover{
-  background: rgb(46, 148, 212);
+  background: #75c9cf;
   color:white;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -85,7 +85,7 @@
 }
 
 .dropdown-content a:hover {
-  background: rgb(46, 148, 212);
+  background: #18858d ;
   color:white;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -102,7 +102,7 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background: blue;
+    background: #75c9cf;
     color: white;
     transition: all 0.2s ease-in-out;
 }
@@ -144,7 +144,7 @@ button:hover{
   padding: 2rem 0;
 }
 .nav-links:hover{
-  background: rgb(46, 148, 212);
+  background: #75c9cf;
   transition: none;
 }
 button{
@@ -157,7 +157,7 @@ button{
   margin: auto;
   border-radius: 4px;
   width: 80%;
-  background: blue;
+  background-color: #18858d;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
@@ -167,7 +167,8 @@ button{
 .toggleNavbar{
   display: block;
   cursor: pointer;
-}
+} 
+
 }
 
   

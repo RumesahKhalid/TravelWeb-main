@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 import Trip from '../components/Trip/trip';
 import MySlider from '../components/Slider/slider';
-import Header from '../components/Header/header';
 
 const Service = () => {
   const imageUrls = [
