@@ -30,7 +30,7 @@ const Blogging = () => {
         />
         <BloggingData
         image={Wild3}       
-        heading2="Kruger National Park, South Africa"
+        heading="Kruger National Park, South Africa"
         text="Home to the Big Five (lion, leopard, elephant, buffalo, rhino) and a wide variety of other animals and birds."/>     
       </div> 
       <h1>Adventure Tour</h1>
