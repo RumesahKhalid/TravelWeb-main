@@ -7,6 +7,7 @@ import Service3 from './pages/service3';
 import BlogPage from './pages/blogPage';
 import About from './pages/about';
 import Contact from './pages/contact';
+import Activities from './pages/activities';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/activities' element={<Activities/>} />
       </Routes>
     </div>
   );

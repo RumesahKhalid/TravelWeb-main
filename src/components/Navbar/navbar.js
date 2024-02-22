@@ -27,7 +27,7 @@ const Navbar = () => {
               <a href="./service">Choose Tour</a>
               <a href="./hotel">Hotels</a>
               <a href="./booking">Booking</a>
-              <a href="./service">Activities</a>
+              <a href="./activities">Activities</a>
               <a href="./service3">Flight</a>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
           <li>
             <Link to='/contact' className='nav-links'>Contact</Link>
           </li>
-          <button className='nav-links-mobile'>Sign Up</button>
+          <button className='nav-links-mobile'>LogIn </button>
        </ul>
        
     </nav>
