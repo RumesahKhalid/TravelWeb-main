@@ -35,15 +35,17 @@ const HotelBookingForm = () => {
   };
 
   return (
+  <div className='booking'>
+     <h2>Add Booking Information</h2>
     <div className="booking-container">
       <label>Check-in Date:</label>
-      <DatePicker selected={checkInDate} onChange={date => setCheckInDate(date)} />
+      <DatePicker className='bookingdata' selected={checkInDate} onChange={date => setCheckInDate(date)} />
 
       <label>Check-out Date:</label>
-      <DatePicker selected={checkOutDate} onChange={date => setCheckOutDate(date)} />
+      <DatePicker className='bookingdata' selected={checkOutDate} onChange={date => setCheckOutDate(date)} />
 
       <label>Room Type:</label>
-      <select value={roomType} onChange={e => setRoomType(e.target.value)}>
+      <select className='bookingdata' value={roomType} onChange={e => setRoomType(e.target.value)}>
         <option value="single">Single</option>
         <option value="double">Double</option>
         <option value="suite">Suite</option>
@@ -77,6 +79,7 @@ const HotelBookingForm = () => {
         </div>
       )}
     </div>
+  </div>   
   );
 };
 

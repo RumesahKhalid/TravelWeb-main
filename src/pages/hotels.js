@@ -12,7 +12,7 @@ const Hotel = () => {
       <Navbar/>
       <Header pName="header-mid"
       Image={HotelImg}
-      title="Book your next trip"
+      title="Book Your Hotel"
       text="The time is now for it be okay to be great. People in this world shun people for being nice."
       btnClass="hide"
      />

@@ -20,20 +20,17 @@
     padding: 1rem .8rem;
 }
 .cards:hover{
-    background:  rgb(46, 148, 212);
+    background:  #18858d;
     color: white;
 }
 .image-about{
-    position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    z-index: -99;
+    width: 100%;
+    height: auto;
 }
 .image-about img{
-    width: 50%;
-    height: 100%;
-    transition: 0.3s ease-in-out;
+    width: 65%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
     border-radius: 7px;
 }
 .image-about:hover img{

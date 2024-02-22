@@ -1,6 +1,8 @@
 import React from 'react';
-import Price from '../../assets/customer.png';
+import Customer from '../../assets/customer.jpg';
 import AboutDesImg from '../../assets/aboutDes.jpg';
+import Price from '../../assets/price.jpg';
+import Easy from '../../assets/easy.png';
 import './aboutPage.css';
 
 const AboutPage = () => {
@@ -14,21 +16,21 @@ const AboutPage = () => {
             <img src={Price} alt='price'/>
           </div>
           <h4>Best Price Guarantee</h4>
-          <p>Book with confidence knowing you're getting the best deal. Our Best Price Guarantee ensures that you'll always find the lowest prices on our website. If you find a lower rate elsewhere within 24 hours of booking, we'll match it and refund you the difference.</p>        
+          <p>Book with confidence knowing you're getting the best deal. Our Best Price Guarantee ensures that you'll always find the lowest prices on our website.</p>        
         </div>
         <div className='cards'>
           <div className='image-about'>
-             <img src={Price} alt='price'/>
+             <img src={Easy} alt='easy'/>
           </div>
          <h4>Easy & Quick Booking</h4>
-          <p>Book with confidence knowing you're getting the best deal. Our Best Price Guarantee ensures that you'll always find the lowest prices on our website. If you find a lower rate elsewhere within 24 hours of booking, we'll match it and refund you the difference.</p>
+          <p>Experience the convenience of easy and quick booking with us! Our streamlined process ensures that you can secure your reservation swiftly, leaving you more time to enjoy your trip.</p>
         </div>
         <div className='cards'>
           <div className='image-about'>
-            <img src={Price} alt='price'/>
+            <img src={Customer} alt='customer'/>
            </div>
           <h4>Customer Care 24/7</h4>
-          <p>Book with confidence knowing you're getting the best deal. Our Best Price Guarantee ensures that you'll always find the lowest prices on our website. If you find a lower rate elsewhere within 24 hours of booking, we'll match it and refund you the difference.</p>
+          <p>Experience peace of mind with our customer care support! Our dedicated team is available 24/7 to assist you with any queries or concerns you may have.</p>
         </div>
       </div>
       <div className='about-des'>

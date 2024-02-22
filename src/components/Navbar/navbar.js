@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Menu, X } from 'react-feather';
+import { Menu, X } from 'react-feather';
 import Logo  from '../../assets/logo.png';
 import './navbar.css';
 
@@ -18,7 +18,6 @@ const Navbar = () => {
           </div> 
         <ul className={active ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <Home/>
             <Link to='/' className='nav-links'>Home</Link>
           </li>
           <div class="dropdown">
