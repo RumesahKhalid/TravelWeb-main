@@ -1,44 +1,53 @@
 .a-card {
-    width: 20%;
-    height: 300px; /* Fixed height for the card */
-    perspective: 1000px; /* Adds 3D effect */
+  width: 20%;
+  height: 300px; /* Fixed height for the card */
+  perspective: 1000px; /* Adds 3D effect */
+}
+
+.a-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.a-card:hover .a-card-inner {
+  transform: rotateY(180deg); /* Flips the card on hover */
+}
+
+.a-card-front, .a-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Hides the back of the card */
+}
+
+.a-card-front {
+  /* Front styling */
+}
+
+.a-card-back {
+  /* Back styling */
+  transform: rotateY(180deg); /* Initially hidden by rotating 180 degrees */
+  
+}
+
+.blog p{
+  color: #a8a2a2;
+  font-style: italic;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 850px) {
+  .a-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
   
   .a-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    transition: none; /* Disable the flip animation on smaller screens */
+    transform: none; /* Reset the transform on smaller screens */
   }
   
-  .a-card:hover .a-card-inner {
-    transform: rotateY(180deg); /* Flips the card on hover */
-  }
-  
-  .a-card-front, .a-card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden; /* Hides the back of the card */
-  }
-  
-  .a-card-front {
-    /* Front styling */
-  }
-  
-  .a-card-back {
-    /* Back styling */
-    transform: rotateY(180deg); /* Initially hidden by rotating 180 degrees */
-    
-  }
-  
-  
-  /* Adjustments for smaller screens */
-  @media screen and (max-width: 850px) {
-    .a-card {
-      width: 100%;
-      margin-bottom: 1.5rem;
-    }
-  }
-  
+}

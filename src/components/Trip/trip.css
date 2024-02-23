@@ -3,15 +3,17 @@
     color: #2a2a2a;
 }
 .trip h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
+
+
 .tripcard{
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
 }
 .t-card {
-    background-color: #c6d5f5;
+    background: linear-gradient(to right, #50a7af, #b2e5e9 );
     max-width: 370px; /* Set the width to 100% */
     max-height: 400px; /* Set a maximum height for the card */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
@@ -41,6 +43,12 @@
     font-size: 1.3rem;
     padding: .9rem 0.2rem 0;
 }
+
+
+.guide h4 {
+    font-style: italic;
+  }
+
 @media screen and (max-width:850px) {
     .trip{
         margin: 4rem 2rem;

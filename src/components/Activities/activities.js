@@ -17,6 +17,7 @@ import './activities.css';
 const Activities = () => {
   return (
     <div className='blog'>
+      <p>Swipe for activity details!</p>
       <div className='blogcard'>
         <ActivitiesData
         image={ZipLining}

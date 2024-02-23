@@ -8,8 +8,8 @@ import './trip.css';
 const Trip = () => {
   return (
     <div className='trip'>
-      <h1>Choose Tour Type</h1>
-      <p>Please choose the type of tour you'd like to embark on.</p>
+      <h1>Explore Our Tours</h1>
+      <p>Embark on unforgettable adventures curated just for you, from cultural expeditions to thrilling escapades.</p>
        <div className='tripcard'>
          <TripData
            image={Forest}
@@ -33,8 +33,7 @@ const Trip = () => {
   
     </div>
     <div className='guide'>
-      <h2>Choose Tour Type</h2>
-      <p>Please choose the type of tour you'd like to embark on.</p>
+      <h4>Come journey with us and immerse yourself in unforgettable adventures, where every moment is an opportunity<br></br> to delight in the wonders of the world.</h4>
     </div>
 
         
