@@ -9,6 +9,7 @@ import BlogPage from './pages/blogPage';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Activities from './pages/activities';
+import Dashboard from './pages/dashboard';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/destination' element={<Destination />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/activities' element={<Activities/>} />
+        <Route path='/dashboard' element={<Dashboard/>} />
       </Routes>
     </div>
   );
