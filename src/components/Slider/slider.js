@@ -18,7 +18,7 @@ const MySlider = ({ imageUrls }) => {
   };
 
   return (
-    <Slider {...settings}>
+    <Slider className='slider-container' {...settings}>
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <img src={imageUrl} alt={`Slide ${index}`} />
