@@ -62,7 +62,7 @@ const HotelBookingForm = () => {
       {showModal && (
         <div className="modal">
           <div className="modal-content">
-            <h2>Booking Summary:</h2>
+            <h2>Booking Summary</h2>
             <p>{summary}</p>
             <button onClick={handleOk}>Ok</button>
             <button onClick={handleClear}>Clear</button>
@@ -73,13 +73,14 @@ const HotelBookingForm = () => {
       {thankYouModal && (
         <div className="modal">
           <div className="modal-content">
-            <h2>Thank You for Booking!</h2>
+            <h3>Thankyou for Booking!</h3>
             <button onClick={() => setThankYouModal(false)}>Close</button>
           </div>
         </div>
       )}
     </div>
-  </div>   
+  </div> 
+  
   );
 };
 

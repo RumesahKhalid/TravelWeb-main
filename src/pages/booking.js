@@ -3,15 +3,15 @@ import Navbar from '../components/Navbar/navbar';
 import Header from '../components/Header/header';
 import BookingPage from '../components/Booking/BookingPage';
 import Footer from '../components/Footer/footer';
-import BlogImg from '../assets/blog.jpg';
+import BookingImg from '../assets/booking.jpg';
 
 const Booking = () => {
   return (
     <div>
        <Navbar/>
        <Header pName="header-mid"
-       Image={BlogImg}
-       title="Blog"
+       Image={BookingImg}
+       title="Hotel Booking"
        btnClass="hide"
       />
       <BookingPage/>

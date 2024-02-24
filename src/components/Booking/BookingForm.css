@@ -3,12 +3,13 @@
   font-size: 2.5rem;
 }
 .booking-container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 2rem auto;
+ 
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: red;
+    border: 0px solid #ccc;
+    border-radius: 6px;
+    background: linear-gradient(to right, #50a7af, #b2e5e9 );
   }
   
   /* Label styling */
@@ -24,7 +25,7 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: yellow;
+
   }
   
   /* Button styling */
@@ -40,7 +41,7 @@
   
   /* Button hover effect */
   button:hover {
-    background-color: #0056b3;
+    background-color: #0a5764;
   }
  
     
@@ -51,20 +52,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto; 
     display: flex;
     flex-direction: column;
+    color:  #0a5764 ;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    background-color: white; 
+    background-color: rgb(214, 238, 234); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
 } 
     .modal-content {
-      background-color: #fff;
+      background-color:rgb(214, 238, 234);
       padding: 20px;
       border-radius: 5px;
     }
-  
