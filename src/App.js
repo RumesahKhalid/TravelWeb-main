@@ -10,7 +10,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Activities from './pages/activities';
 import Destination from './pages/destination';
-import './App.css'; 
+import './App.css';
 
 function App() {
   return (
@@ -27,7 +27,6 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/activities' element={<Activities/>} />
         <Route path='/destination' element={<Destination/>}/>
-
       </Routes>
     </div>
   );
