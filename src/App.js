@@ -3,13 +3,14 @@ import Home from './pages/home';
 import Service from './pages/service';
 import Hotel from './pages/hotels';
 import Booking from './pages/booking';
-import Destination from './pages/destination';
+import Reservation  from './pages/reservation';
 import Service3 from './pages/service3';
 import BlogPage from './pages/blogPage';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Activities from './pages/activities';
-import './App.css';
+import Destination from './pages/destination';
+import './App.css'; 
 
 function App() {
   return (
@@ -19,12 +20,14 @@ function App() {
         <Route path='/service' element={<Service />} />
         <Route path='/hotel' element={<Hotel/>} />
         <Route path='/booking' element={<Booking/>} />
+        <Route path='/reservation' element={<Reservation/>}/>
         <Route path='/service3' element={<Service3 />} />
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<BlogPage />} />
-        <Route path='/destination' element={<Destination />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/activities' element={<Activities/>} />
+        <Route path='/destination' element={<Destination/>}/>
+
       </Routes>
     </div>
   );
