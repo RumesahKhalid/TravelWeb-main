@@ -16,7 +16,7 @@ const SignupPage = () => {
       if (password === confirmPassword) {
         navigate("/login");
       } else {
-        alert('Passwords do not match');
+        alert('Passwords do not match!');
       }
     } else {
       alert('Please fill in all fields');
