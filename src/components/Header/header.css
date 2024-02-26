@@ -35,7 +35,7 @@ img{
 .header-text h1{
     font-size: 3rem;
     font-weight: 800;
-    background: white;
+    background:white;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent ;
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */

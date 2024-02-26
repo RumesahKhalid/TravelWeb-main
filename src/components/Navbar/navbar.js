@@ -23,11 +23,11 @@ const Navbar = () => {
           <div class="dropdown">
             <span>Service &#9662;</span>
             <div class="dropdown-content">
-              <a href="./service">Tours</a>
-              <a href="./hotel">Hotels</a>
-              <a href="./booking">Booking</a>
-              <a href="./activities">Activities</a>
-              <a href="./service3">Flight</a>
+              <a href="./service" className='nav-links'>Tours</a>
+              <a href="./hotel" className='nav-links'>Hotels</a>
+              <a href="./booking" className='nav-links'>Booking</a>
+              <a href="./activities" className='nav-links'>Activities</a>
+              <a href="./service3" className='nav-links'>Flight</a>
             </div>
           </div>
           <li>
