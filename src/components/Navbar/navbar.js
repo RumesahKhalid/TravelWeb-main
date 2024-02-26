@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'react-feather';
 import Logo  from '../../assets/logo.png';
+import { useNavigate } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -10,6 +11,9 @@ const Navbar = () => {
   const toggleNav = () => {
     setActive(!active);
   };
+
+  const navigate = useNavigate();
+
   return (
     <nav className='NavbarItem'>
          <img src={Logo} alt='logo' className='navbar-logo'/>        
@@ -45,7 +49,7 @@ const Navbar = () => {
           <li>
             <Link to='/contact' className='nav-links'>Contact</Link>
           </li>
-          <button className='nav-links-mobile'>LogIn </button>
+          <button className='nav-links-mobile' onClick={() => navigate("./signup")}>Signup</button>
        </ul>
        
     </nav>

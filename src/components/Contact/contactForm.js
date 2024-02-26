@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 
-function ContactForm() {
+const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
