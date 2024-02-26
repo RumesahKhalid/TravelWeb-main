@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Header from '../components/Dashboard/Header/header';
+import HeaderDashboard from '../components/Dashboard/Header/headerDashboard';
 import Sidebar from '../components/Dashboard/Sidebar/sidebar';
 import Home from '../components/Dashboard/Home/home';
 
@@ -12,7 +12,7 @@ const Dashboard = () => {
   
     return (      
           <div className='grid-container'>
-            <Header OpenSidebar={OpenSidebar}/>
+            <HeaderDashboard OpenSidebar={OpenSidebar}/>
             <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
             <Home/> 
           </div>

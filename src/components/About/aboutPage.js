@@ -42,7 +42,7 @@ const AboutPage = () => {
          </div>
          <div className='about-des-img'>
              <img src={AboutDesImg} alt='about-des'/>
-           </div>
+         </div>
       </div>
     </div>
   )

@@ -76,15 +76,30 @@
    border-radius: 6px;
 }
 @media screen and (max-width:850px) {
-    .blog{
+    .about{
         margin: 4rem 2rem;
     }
-    .blogcard{
+    .aboutCard{
       flex-direction: column;
     }
-    .b-card{
+    .cards{
         width: 100%;
         margin-bottom: 1.5rem;
+    }
+    .about-des{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 4rem 2rem;
+    }
+    .about-des-text{
+        width: 100%;
+    }
+    .about-des-img{
+        width: 100%;
+        margin: 1.8rem 0;
+    }
+    .about-des-img img{
+        height: 250px;
     }
 }
 
