@@ -1,9 +1,17 @@
+.blog{
+  margin: 4rem 6rem;
+  color: #2a2a2a;
+}
+.blogcard{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
 .a-card {
   width: 20%;
   height: 300px; /* Fixed height for the card */
   perspective: 1000px; /* Adds 3D effect */
 }
-
 .a-card-inner {
   position: relative;
   width: 100%;
