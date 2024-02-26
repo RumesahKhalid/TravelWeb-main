@@ -1,39 +1,72 @@
-.from-container{
-    margin: 4rem 6rem;
-    color: #2a2a2a;
-   }
-   .from-container form {
-   padding-top: 3rem;
-   display: flex;
-   flex-direction: column;
-   width: 50%;
-   margin: auto;  
-   }
-   .from-container input{
-       height: 3rem;
-       padding: 0 1rem;
-       margin-bottom: 2rem;
-       border-radius: 0.3rem;
-       border: 1px solid #2a2a2a;
-   }
-   .from-container textarea{
-   padding: 0 1rem;
-   margin-bottom: 2rem;
-   border-radius: 0.3rem;
-   border: 1px solid #2a2a2a;
-   }
-   .from-container button{
-       display: inline;
-   }
-   @media screen and (max-width: 850px){
-       .from-container{
-           margin: 4rem 2rem;
-           color: #2a2a2a;  
-       }
-       .from-container form{
-           padding-top: 2rem;
-           
-           width: 90%;
-         
-   }
-   }
+.form-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+input:focus + label,
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 12px;
+  color: #007bff;
+}
+.btn {
+  align-self: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  pointer-events: auto; 
+}
+
+.btn:hover {
+  background-color: #9abfe7;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+}
