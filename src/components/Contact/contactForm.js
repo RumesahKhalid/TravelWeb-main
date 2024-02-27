@@ -3,13 +3,27 @@ import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 function ContactForm() {
-  const  data={user_name:"",user_email:"",subject:"",message:""};
-  const [inputData, setInputData] = useState("data");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
-  function handleData(e){
-    setInputData({...inputData, [e.target.name]:e.target.value})
-    console.log(inputData)
- }
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubjectChange = (event) => {
+    setSubject(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
   const form = useRef();
 
   function sendEmail (e) {

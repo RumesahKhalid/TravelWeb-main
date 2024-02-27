@@ -10,7 +10,8 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Activities from './pages/activities';
 import Destination from './pages/destination';
-import Dashboard from './pages/dashboard';
+import Signup from './pages/signup';
+import Login from './pages/login';
 import './App.css';
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/activities' element={<Activities/>} />
         <Route path='/destination' element={<Destination/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/login' element={<Login/>}/>
+
       </Routes>
     </div>
   );
