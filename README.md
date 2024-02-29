@@ -24,8 +24,11 @@ git clone https://github.com/your-username/journeyjoy.git
 JourneyJoy boasts a modern and sleek UI design, featuring:
 
 *Eye-catching imagery of destinations.
+
 *Intuitive navigation menus for easy exploration.
+
 *Interactive maps showcasing tour routes and points of interest.
+
 *responsive layout for seamless browsing on various devices.
 
 ### Technologies Used
@@ -33,9 +36,13 @@ JourneyJoy boasts a modern and sleek UI design, featuring:
 JourneyJoy frontend is built using the following technologies:
 
 -HTML5
+
 -CSS3
+
 -JavaScript
+
 -React
+
 -Nodejs
 
 ### License
