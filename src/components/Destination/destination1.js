@@ -9,16 +9,21 @@ const Destination1 = () => {
       };
     
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAdtUCBHrnflbwBuS7TAf-cO4u2p9HWITw">
-    <GoogleMap
-      mapContainerStyle={mapStyles}
-      zoom={10}
-      center={{
-        lat: 41.3851,
-        lng: 2.1734
-      }}
-    />
-  </LoadScript>
+    <>
+      <div className='text'>
+        <h4>Explore destination using map</h4>
+      </div>
+      <LoadScript googleMapsApiKey="AIzaSyAdtUCBHrnflbwBuS7TAf-cO4u2p9HWITw">
+        <GoogleMap
+          mapContainerStyle={mapStyles}
+          zoom={10}
+          center={{
+            lat: 41.3851,
+            lng: 2.1734
+          }}
+        />
+      </LoadScript>
+    </>
   );
 }
 

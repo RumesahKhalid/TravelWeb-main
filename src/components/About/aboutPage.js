@@ -36,9 +36,10 @@ const AboutPage = () => {
       <div className='about-des'>
          <div className='about-des-text'>
            <h2>About JourneyJoy</h2>
-           <p className='para1'>These popular destinations have a lot to offer</p>
-           <p className='para2'>London is a shining example of a metropolis at the highest peak of modernity and boasts an economy and cultural diversity that’s the envy of other global superpowers.</p>
-           <p className='para3'>Take the opportunity to acquaint yourself with its fascinating history chronicled by institutions like the British Museum as well as see how far it has come by simply riding the Tube and passing by celebrated landmarks like Buckingham Palace, Westminster Abbey, and marvels like Big Ben, the London Eye, and the Tower Bridge.</p>
+           <p className='para1'>JourneyJoy is the brainchild of two passionate individuals, led by Rumesah Khalid and supported by Ersa Ehsan.</p>
+           <p className='para2'>As avid travelers ourselves, we recognized the need for a platform that not only showcases the beauty of destinations but also simplifies the travel planning process.</p>
+           <p className='para3'>With JourneyJoy, our aim is to inspire wanderlust and provide travelers with an immersive experience to discover, explore, and book their dream destinations effortlessly.</p>
+           <p className='para4'>Join us on this exciting journey of exploration and adventure!</p>
          </div>
          <div className='about-des-img'>
              <img src={AboutDesImg} alt='about-des'/>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { BsFillArchiveFill, BsFillGrid3X3GapFill, BsBank2, BsPeopleFill, BsFillBellFill } from 'react-icons/bs';
-import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,LineChart, Line } from 'recharts';
+import { BsFillArchiveFill,BsBank2, BsPeopleFill, BsFillBellFill } from 'react-icons/bs';
+import { Bar,XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,LineChart,Line } from 'recharts';
 import {ComposedChart,Area, Scatter,} from 'recharts';
 import './home.css';
 
@@ -57,28 +57,28 @@ const Home = () => {
            <h3>DASHBOARD</h3>
         </div>
         <div className='main-cards'>
-          <div className='card'>
+          <div className='dashboard-card'>
             <div className='card-inner'>
               <h3>SERVICE</h3>
               <BsFillArchiveFill className='card-icon'/>
             </div>
             <h1>5</h1>
           </div>
-          <div className='card'>
+          <div className='dashboard-card'>
             <div className='card-inner'>
               <h3>BOOKING</h3>
               <BsBank2 className='card-icon'/>
             </div>
             <h1>30</h1>
           </div>
-          <div className='card'>
+          <div className='dashboard-card'>
             <div className='card-inner'>
               <h3>CUSTOMER</h3>
               <BsPeopleFill className='card-icon'/>
             </div>
             <h1>33</h1>
           </div>
-          <div className='card'>
+          <div className='dashboard-card'>
             <div className='card-inner'>
               <h3>ALERTS</h3>
               <BsFillBellFill className='card-icon'/>

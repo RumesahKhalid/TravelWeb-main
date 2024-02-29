@@ -10,8 +10,7 @@ const Service = () => {
     'https://www.borneotourgigant.com/rivertrail.JPG',
     'https://cdn.trips.pk/tours/images/tourimages/large/L_beach-pakistan.jpg',
     'https://cdn.ventrata.com/image/upload/s--27_40X0K--/ar_1.5,c_fill,dpr_3.0,w_400/v1642413239/x01pak3j5qpntgkcgenj.jpg',
-    'https://leadpakistan.com.pk/news/wp-content/uploads/2023/06/naran-4.jpg',
-  ];
+    'https://cdn.trips.pk/tours/images/tourimages/large/L_beach-pakistan.jpg'];
   return (
     <div>
       <Navbar />

@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/navbar';
 import Header from '../components/Header/header';
 import HotelPage from '../components/Hotels/hotelPage';
 import Footer from '../components/Footer/footer';
-import HotelImg from '../assets/adven1.jpg';
+import HotelImg from '../assets/beach.jpg';
 
 
 const Hotel = () => {

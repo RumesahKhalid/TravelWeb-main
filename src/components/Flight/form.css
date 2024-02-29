@@ -56,8 +56,8 @@ button.search-btn:hover {
 }
 
 .card img {
+  background: green;
   width: 500px;
   height: 300px;
   transition: transform 0.5s ease;
 }
-
