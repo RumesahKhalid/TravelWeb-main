@@ -17,7 +17,7 @@ To explore the JourneyJoy website locally, follow these simple steps:
 
 ### Clone the Repository:
 
-git clone [https://github.com/your-username/journeyjoy.git](https://github.com/RumesahKhalid/TravelWeb-main.git)
+git clone https://github.com/RumesahKhalid/TravelWeb-main.git
 
 ### UI Design
 
