@@ -17,7 +17,7 @@ To explore the JourneyJoy website locally, follow these simple steps:
 
 ### Clone the Repository:
 
-git clone https://github.com/your-username/journeyjoy.git
+git clone [https://github.com/your-username/journeyjoy.git](https://github.com/RumesahKhalid/TravelWeb-main.git)
 
 ### UI Design
 
@@ -42,9 +42,5 @@ JourneyJoy frontend is built using the following technologies:
 -JavaScript
 
 -React
-
--Nodejs
-
-### License
 
 This project is licensed under the MIT License .
