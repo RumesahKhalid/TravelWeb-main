@@ -49,7 +49,8 @@ textarea:not(:placeholder-shown) + label {
   font-size: 12px;
   color: #007bff;
 }
-.btn {
+
+button {
   align-self: center;
   background-color: #007bff;
   color: white;
@@ -58,18 +59,14 @@ textarea:not(:placeholder-shown) + label {
   padding: 14px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
 }
 
-.btn:hover {
+button:hover {
   background-color: #9abfe7;
 }
 
 @media (max-width: 850px) {
   .form-container {
     padding: 10px;
-  }
-  .btn{
-    display: block; 
   }
 }

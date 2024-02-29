@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Youtube } from 'react-feather';
-import Logo  from '../../assets/logo.png';
+import Logo  from '../../assets/logo1.png';
 import './footer.css';
 
 const Footer = () => {

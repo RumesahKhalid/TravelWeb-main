@@ -15,8 +15,8 @@
   z-index: 9999;
 }
 .navbar-logo{
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 10rem;
+  height: 10rem;
   cursor: pointer;
 }
 
@@ -90,16 +90,17 @@ color:white;
 border-radius: 4px;
 transition: all 0.2s ease-in-out;
 }
-button{
+.nav-links-mobile{
   padding: 0.5rem 1rem;
   white-space: nowrap;
   border-radius: 0.3rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  background-color: #18858d;
   border: none;
   cursor: pointer;
 }
-button:hover{
+.nav-links-mobile:hover{
   background: #75c9cf;
   color: white;
   transition: all 0.2s ease-in-out;

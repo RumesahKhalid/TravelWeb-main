@@ -7,6 +7,7 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [messageSent, setMessageSent] = useState(false); // State to track message sending status
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -26,38 +27,39 @@ function ContactForm() {
 
   const form = useRef();
 
-  function sendEmail (e) {
+  function sendEmail(e) {
     e.preventDefault();
-  
+
     emailjs
       .sendForm('service_2kxyr6r', 'template_vv6cznz', form.current, {
         publicKey: 'shBkeBeEspvDOIYzp',
       })
-
       .then(
         () => {
           console.log('SUCCESS!');
-          e.target.reset();
+          setMessageSent(true);
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setMessageSent(false);
         },
       );
   };
-  
 
   return (
     <div className="form-container">
       <h1>Contact us!</h1>
-      <form 
-      ref={form}
-      onSubmit={sendEmail}>
+      {messageSent && <p>Message sent successfully!</p>}
+      <form
+        ref={form}
+        onSubmit={sendEmail}>
         <div className="input-container">
           <input
             name="user_name"
             type="text"
-            value={inputData.user_name}
-            onChange={handleData}
+            value={name}
+            onChange={handleNameChange}
             required
           />
           <label>Name</label>
@@ -66,8 +68,8 @@ function ContactForm() {
           <input
             type="email"
             name="user_email"
-            value={inputData.user_email}
-            onChange={handleData}
+            value={email}
+            onChange={handleEmailChange}
             required
           />
           <label>Email</label>
@@ -76,8 +78,8 @@ function ContactForm() {
           <input
             type="text"
             name="subject"
-            value={inputData.subject}
-            onChange={handleData}
+            value={subject}
+            onChange={handleSubjectChange}
             required
           />
           <label>Subject</label>
@@ -85,15 +87,15 @@ function ContactForm() {
         <div className="input-container">
           <textarea
             name="message"
-            value={inputData.message}
-            onChange={handleData}
+            value={message}
+            onChange={handleMessageChange}
             required
           ></textarea>
           <label>Message</label>
         </div>
         <div>
-          <button type="submit" className="btn">Send Message</button>
-        </div>  
+          <button type="submit">Send Message</button>
+        </div>
       </form>
     </div>
   );

@@ -7,18 +7,12 @@ import SearchItem from "./SearchItem";
 
 const List = () => {
   const location = useLocation();
-
-  // Define default values
-  const defaultDestination = "";
-  const defaultDate = [{ startDate: new Date(), endDate: new Date() }];
-  const defaultOptions = { adult: "", children: "", room: "" };
-
-  // Extract state properties or use default values if location.state is not defined
-  const [destination, setDestination] = useState(location.state ? location.state.destination : defaultDestination);
-  const [date, setDate] = useState(location.state ? location.state.date : defaultDate);
+  const initialState = location.state || {}; // Initialize with an empty object if location.state is null or undefined
+  const [destination, setDestination] = useState(initialState.destination || "");
+  const [date, setDate] = useState(initialState.date || [{ startDate: new Date(), endDate: new Date() }]);
   const [openDate, setOpenDate] = useState(false);
-  const [options, setOptions] = useState(location.state ? location.state.options : defaultOptions);
-
+  const [options, setOptions] = useState(initialState.options || {});
+  
   return (
     <div>
       <div className="listContainer">
@@ -32,12 +26,9 @@ const List = () => {
             <div className="lsItem">
               <label>Check-in Date</label>
               <span onClick={() => setOpenDate(!openDate)}>{`${format(
-                date[0]?.startDate || defaultDate[0].startDate, // Use default value if date is not defined
+                date[0].startDate,
                 "MM/dd/yyyy"
-              )} to ${format(
-                date[0]?.endDate || defaultDate[0].endDate, // Use default value if date is not defined
-                "MM/dd/yyyy"
-              )}`}</span>
+              )} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
               {openDate && (
                 <DateRange
                   onChange={(item) => setDate([item.selection])}
