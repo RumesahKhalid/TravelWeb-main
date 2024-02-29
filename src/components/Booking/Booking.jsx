@@ -12,6 +12,7 @@ import { useState } from "react";
 const Hotel = () => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [open, setOpen] = useState(false);
+  
   const navigate = useNavigate();
 
   const photos = [
@@ -79,7 +80,7 @@ const Hotel = () => {
         )}
         <div className="hotelWrapper">
           <button className="bookNow"  onClick={() => navigate("/reservation")}>Reserve or Book Now!</button>
-          <h1 className="hotelTitle">Tower Street Apartments</h1>
+          <h1 className="hotelTitle">Envoy Continental Hotel</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
             <span>Elton St 125 New york</span>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/navbar';
 import Header from '../components/Header/header';
-import BookingPage from '../components/Booking/Booking';
+import HotelBooking from '../components/Booking/Booking';
 import Footer from '../components/Footer/footer';
 import BookingImg from '../assets/booking.jpg';
 
@@ -14,7 +14,7 @@ const Booking = () => {
        title="Hotel Booking"
        btnClass="hide"
       />
-      <BookingPage/>
+      <HotelBooking/>
       <Footer/>
     </div>
   )

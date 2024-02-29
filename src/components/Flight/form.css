@@ -1,8 +1,13 @@
 /* form.css */
 
+.container {
+  display: flex;
+}
+
 .booking-form {
+  flex: 1; /* Take remaining space */
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem;
   padding: 20px;
   background-color: #eee8e8;
   border-radius: 8px;
@@ -39,3 +44,21 @@ button.search-btn {
 button.search-btn:hover {
   background-color: #0056b3;
 }
+
+/* Styles for the slider card */
+.card {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 2rem;
+  margin-left: 9rem; /* Adjust as needed */
+}
+
+.card img {
+  background: green;
+  width: 500px;
+  height: 300px;
+  transition: transform 0.5s ease;
+}
+

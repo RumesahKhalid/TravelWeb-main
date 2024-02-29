@@ -49,7 +49,7 @@ const Navbar = () => {
           <li>
             <Link to='/contact' className='nav-links'>Contact</Link>
           </li>
-          <button className='nav-links-mobile' onClick={() => navigate("./signup")}>Signup</button>
+          <button className='nav-links-mobile' onClick={() => navigate("/")}>Logout</button>
        </ul>
        
     </nav>
