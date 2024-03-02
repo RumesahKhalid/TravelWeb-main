@@ -24,6 +24,7 @@ function App() {
       if (user) {
         setUserName(user.displayName);
       } else setUserName("");
+      console.log(user)
     });
   },[]); 
   return (
