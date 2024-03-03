@@ -12,9 +12,9 @@ import Contact from './pages/contact';
 import Activities from './pages/activities';
 import Destination from './pages/destination';
 import Dashboard from './pages/dashboard';
-import Login from './components/Login/login'
-import Signup from './components/Signup/signup'
-import {auth} from './firebase'
+import Login from './components/Login/login';
+import Signup from './components/Signup/signup';
+import {auth} from './firebase';
 import './App.css';
 
 function App() {
@@ -47,6 +47,7 @@ function App() {
           <Route path='/signup' element={<Signup/>}/>
 
         </Routes>
+
     </div>
   );
 }

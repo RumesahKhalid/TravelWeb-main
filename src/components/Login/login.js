@@ -18,7 +18,7 @@ function Login() {
 
   const handleSubmission = () => {
     if (!values.email || !values.pass) {
-      setErrorMsg("Please fill in all fields.");
+      setErrorMsg("Fill all fields");
       return;
     }
     setErrorMsg("");
