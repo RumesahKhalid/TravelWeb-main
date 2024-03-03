@@ -3,7 +3,7 @@ import ZipLining from '../assets/zip-lining-01.jpg';
 import BungeeJumping from '../assets/bungee-jumping-01.jpg';
 import Rafting from '../assets/rafting-01.jpg';
 import Paragliding from '../assets/paragliding-01.jpg';
-import Navbar from '../components/Navbar/homenav';
+import Navbar from '../components/Navbar/navbar';
 import Header from '../components/Header/header1';
 import HomeVideo from '../assets/video.mp4';
 import Destination from '../components/Destination/destination';

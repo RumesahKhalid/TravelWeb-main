@@ -7,7 +7,7 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [messageSent, setMessageSent] = useState(false); // State to track message sending status
+  const [messageSent, setMessageSent] = useState(false); 
 
   const handleNameChange = (event) => {
     setName(event.target.value);
