@@ -20,7 +20,6 @@ const BookingForm = () => {
     const newIndex = (currentImageIndex + 1) % images.length;
     setCurrentImageIndex(newIndex);
   };
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex =>
