@@ -19,7 +19,7 @@ function Signup() {
 
   const handleSubmission = () => {
     if (!values.name || !values.email || !values.pass) {
-      setErrorMsg("Please fill in all fields.");
+      setErrorMsg("Please fill all fields");
       return;
     }
     setErrorMsg("");

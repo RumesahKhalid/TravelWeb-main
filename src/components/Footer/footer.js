@@ -47,8 +47,13 @@ const Footer = () => {
             </div>
         
         </div>
-    
+         <p class="copyright">
+            &copy; 2024 All right reserved | Made by Rumesah Khalid & Ersa Ehsan
+         </p>
     </div>
+
+      
+
   )
 }
 

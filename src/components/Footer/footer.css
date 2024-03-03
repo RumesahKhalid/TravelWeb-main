@@ -45,6 +45,11 @@
     padding-bottom: .4rem;
     font-size: 1.1rem;
 }
+p.copyright{
+    padding-top: 50px;
+    padding-bottom: 0PX;
+    color: #255357;
+}
 @media screen and (max-width:850px) {
     .footer{
         padding: 4rem 2rem;
